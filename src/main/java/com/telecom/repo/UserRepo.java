@@ -1,5 +1,10 @@
 package com.telecom.repo;
 
-//@Repository
-public interface UserRepo /* extends JpaRepository<User, Long> */ {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.telecom.model.User;
+
+@Repository
+public interface UserRepo extends JpaRepository<User, Long> {
 }

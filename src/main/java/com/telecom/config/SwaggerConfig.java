@@ -28,7 +28,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "Sreenivasam",
+                "Telecom",
                 "",
                 "",
                 "Terms of service",
