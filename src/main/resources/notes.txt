@@ -1,0 +1,43 @@
+1)open terminal and type  mysql -uroot -p and hit enter
+2)Enter password as surya@123 and hit enter.
+3)You will see mysql>  that means database connection in success;
+4)Type show databases to see list of databases;
+5)You will be able to see telecom but you need to use it for that use step 6.
+6)Enter use telecom and hit enter.
+7)Now you are in telecom database;
+8)To see data in table user enter select * from user; and hit enter;
+
+to create database
+create database telecom;
+
+
+HOW TO ADD SWAGGER IN SPRING BOOT APPLICATION 
+1)aDD FOLLOWING CODE IN POM.XML
+<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+2)Created one configuration class with name SwaggerConfig in com.telecom.config package 
+   with following code.
+   
+   Refer SwaggerConfig class for code.
+   
+   
+   
+ HOW OUR JAVA CLASS User IS RELATED TO DATABASE;
+ 
+ 1)@Entity is an annotation used to tell application that this class is an entity class.
+ 2)@Table(name="user")  ,tells application that this User class is relating to user table in database.
+ 3)@Id ,tells application that id property of User class is an primary key 
+ 4)@Column ,tells application that id property of User class is a column in table.
+ 5)@GeneratedValue(strategy = GenerationType.AUTO) ,tells application that generate the ids automatically by incrementing with 1.
+ 6)Every operation on this User class's object like save,update,delete,select will be reflected in the database user table.
+ 
