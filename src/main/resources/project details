@@ -1,0 +1,13 @@
+1st service is creating user i.e.. registration form
+
+id,name,mobile number,username and password
+
+all the above fields are mandotory
+
+Second screen is Monthly Plans
+
+id,plan name,price,duration in months
+
+Third screen is prepaid plans
+
+id,data,price,duration,mobile hotspot,unlimited text to over 100 countries

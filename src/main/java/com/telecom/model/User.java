@@ -10,6 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user")
 public class User {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
@@ -23,6 +24,18 @@ public class User {
 
 	@Column(name = "password")
 	private String password;
+	
+
+	@Column(name = "age")
+	private Float age;
+
+	public Float getAge() {
+		return age;
+	}
+
+	public void setAge(Float age) {
+		this.age = age;
+	}
 
 	public Long getId() {
 		return id;
@@ -55,5 +68,7 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	
 
 }
