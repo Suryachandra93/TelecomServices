@@ -1,35 +1,23 @@
 package com.telecom.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.springframework.data.annotation.Id;
 
-@Entity
-@Table(name="plan")
 public class Plan {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="ID")
-	private Long id;
-	
-	@Column(name="PLAN_NAME")
+	private String id;
+
 	private String planName;
-	
-	@Column(name="PRICE")
+
 	private Float price;
-	
-	@Column(name="DURATION")
+
 	private Float durationInMonths;
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -56,6 +44,5 @@ public class Plan {
 	public void setDurationInMonths(Float durationInMonths) {
 		this.durationInMonths = durationInMonths;
 	}
-	
-	
+
 }

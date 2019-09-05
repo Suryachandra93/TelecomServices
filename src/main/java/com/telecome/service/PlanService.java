@@ -12,5 +12,5 @@ public interface PlanService {
 	
 	public ApiResponse getPlans();
 
-	public ApiResponse getPlan(Long id);
+	public ApiResponse getPlan(String id);
 }

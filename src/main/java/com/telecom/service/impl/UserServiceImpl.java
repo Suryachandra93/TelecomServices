@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public ApiResponse getUser(Long id) {
+	public ApiResponse getUser(String id) {
 		User user = userRepo.findById(id).isPresent() ? userRepo.findById(id).get() : null;
 		if (user == null) {
 			message = "User doesn't exist with id " + id;
@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public ApiResponse deleteUser(Long id) {
+	public ApiResponse deleteUser(String id) {
 		userRepo.deleteById(id);
 		message = "User Deleted";
 		response = new ApiResponse(HttpStatus.OK, message, null);

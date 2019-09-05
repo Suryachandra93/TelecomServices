@@ -34,7 +34,7 @@ public class PlanServiceImpl implements PlanService{
 	}
 
 	@Override
-	public ApiResponse getPlan(Long id) {
+	public ApiResponse getPlan(String id) {
 		String message=null;
 		ApiResponse response=null;
 		Plan plan = planRepo.findById(id).isPresent() ? planRepo.findById(id).get() : null;

@@ -12,9 +12,9 @@ public interface UserService {
 
 	public ApiResponse getUsers();
 
-	public ApiResponse getUser(Long id);
+	public ApiResponse getUser(String id);
 
-	public ApiResponse deleteUser(Long id);
+	public ApiResponse deleteUser(String id);
 	
 	public ApiResponse deleteUsers();
 

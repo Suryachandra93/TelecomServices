@@ -26,7 +26,7 @@ public class UserRestController {
 	}
 
 	@GetMapping(value = "{id}")
-	public ApiResponse getUser(@PathVariable(name = "id") Long id) {
+	public ApiResponse getUser(@PathVariable(name = "id") String id) {
 		return userService.getUser(id);
 	}
 
@@ -36,7 +36,7 @@ public class UserRestController {
 	}
 
 	@DeleteMapping(value = "delete/{id}")
-	public ApiResponse deleteUser(@PathVariable(name = "id") Long id) {
+	public ApiResponse deleteUser(@PathVariable(name = "id") String id) {
 		return userService.deleteUser(id);
 	}
 

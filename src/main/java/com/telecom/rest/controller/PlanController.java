@@ -25,7 +25,7 @@ public class PlanController {
 	}
 	
 	@GetMapping("{id}")
-	public ApiResponse getPlan(@PathVariable Long id) {
+	public ApiResponse getPlan(@PathVariable String id) {
 		return planService.getPlan(id);
 	}
 	

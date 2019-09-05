@@ -1,32 +1,18 @@
 package com.telecom.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.springframework.data.annotation.Id;
 
-@Entity
-@Table(name = "user")
 public class User {
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id")
-	private Long id;
 
-	@Column(name = "name")
+	@Id
+	private String id;
+
 	private String name;
 
-	@Column(name = "mobile")
 	private Long mobile;
 
-	@Column(name = "password")
 	private String password;
-	
 
-	@Column(name = "age")
 	private Float age;
 
 	public Float getAge() {
@@ -37,11 +23,11 @@ public class User {
 		this.age = age;
 	}
 
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -68,7 +54,5 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
 
 }
