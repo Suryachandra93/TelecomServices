@@ -32,7 +32,7 @@ HOW TO ADD SWAGGER IN SPRING BOOT APPLICATION
    
    
    
- HOW OUR JAVA CLASS User IS RELATED TO DATABASE;
+ HOW OUR JAVA CLASS User IS RELATED TO DATABASE ;
  
  1)@Entity is an annotation used to tell application that this class is an entity class.
  2)@Table(name="user")  ,tells application that this User class is relating to user table in database.
